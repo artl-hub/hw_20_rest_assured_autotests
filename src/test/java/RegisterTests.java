@@ -31,7 +31,7 @@ public class RegisterTests {
     }
 
     @Test
-    void unsuccessfulRegisterMissingPasswordTest() {
+    void registerMissingPasswordTest() {
         String registerData = "{\n" +
                 "    \"email\": \"eve.holt@reqres.in\",\n" +
                 "    \"password\": \"\"\n" +
@@ -52,7 +52,7 @@ public class RegisterTests {
     }
 
     @Test
-    void unsuccessfulRegisterMissingEmailTest() {
+    void registerMissingEmailTest() {
         String registerData = "{\n" +
                 "    \"email\": \"\",\n" +
                 "    \"password\": \"pistol\"\n" +
@@ -73,7 +73,7 @@ public class RegisterTests {
     }
 
     @Test
-    void unsuccessfulRegisterMissingEmailAndPasswordTest() {
+    void registerMissingEmailAndPasswordTest() {
         String registerData = "{\n" +
                 "    \"email\": \"\",\n" +
                 "    \"password\": \"\"\n" +
@@ -94,7 +94,7 @@ public class RegisterTests {
     }
 
     @Test
-    void unsuccessfulRegisterMissingAtSymbolInEmaiTest() {
+    void registerMissingAtSymbolInEmaiTest() {
         String registerData = "{\n" +
                 "    \"email\": \"eve.holtreqres.in\",\n" +
                 "    \"password\": \"pistol\"\n" +
